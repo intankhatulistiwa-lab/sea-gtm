@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Southeast Asia Go-to-Market — How I Can Help</title>
+  <meta name="description" content="12+ years of B2B marketing in Southeast Asia. Helping companies enter Indonesia — the region's largest and most complex market.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --green: #2D6A4F;
+      --green-light: #F0F7F4;
+      --blue: #1B4965;
+      --blue-light: #EEF4F8;
+      --purple: #6B2D5B;
+      --purple-light: #F8F0F6;
+      --amber: #92400E;
+      --amber-light: #FEF7ED;
+      --text: #1A1A1A;
+      --text-mid: #444;
+      --text-light: #666;
+      --text-muted: #888;
+      --border: #E8E8E8;
+      --bg-card: #FAFAFA;
+    }
+
+    body {
+      font-family: 'DM Sans', -apple-system, sans-serif;
+      background: #FFFFFF;
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    /* Header */
+    .header { margin-bottom: 48px; }
+    .header-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #999;
+      margin-bottom: 12px;
+    }
+    .header h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+    .header h1 span { color: var(--text-muted); font-weight: 400; }
+    .header-problem {
+      font-size: 16px;
+      line-height: 1.75;
+      color: var(--text-mid);
+      max-width: 600px;
+      margin-bottom: 16px;
+    }
+    .header-solution {
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--text-light);
+      max-width: 560px;
+      border-left: 3px solid var(--green);
+      padding-left: 16px;
+    }
+
+    /* Progression */
+    .progression {
+      display: flex;
+      align-items: center;
+      margin-bottom: 32px;
+      padding: 0 4px;
+      flex-wrap: wrap;
+      gap: 4px 0;
+    }
+    .progression-step {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .progression-step .num {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      font-weight: 600;
+    }
+    .progression-step .label {
+      font-size: 11.5px;
+      font-weight: 500;
+      color: var(--text-light);
+    }
+    .progression-line {
+      flex: 1;
+      min-width: 12px;
+      height: 1px;
+      background: #DDD;
+      margin: 0 10px;
+    }
+    .step-green .num { background: #2D6A4F15; color: var(--green); }
+    .step-blue .num { background: #1B496515; color: var(--blue); }
+    .step-purple .num { background: #6B2D5B15; color: var(--purple); }
+    .step-amber .num { background: #92400E15; color: var(--amber); }
+
+    /* Tier Cards */
+    .tier-card {
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+      margin-bottom: 20px;
+      background: var(--bg-card);
+      transition: all 0.3s ease;
+    }
+    .tier-card.open.green { border-color: #2D6A4F40; background: var(--green-light); }
+    .tier-card.open.blue { border-color: #1B496540; background: var(--blue-light); }
+    .tier-card.open.purple { border-color: #6B2D5B40; background: var(--purple-light); }
+    .tier-card.open.amber { border-color: #92400E40; background: var(--amber-light); }
+
+    .tier-header {
+      padding: 28px 32px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      user-select: none;
+    }
+    .tier-header:hover { opacity: 0.85; }
+
+    .tier-badge {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      letter-spacing: 1px;
+      font-weight: 600;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 4px;
+      display: inline-block;
+    }
+    .green .tier-badge { color: var(--green); background: #2D6A4F15; }
+    .blue .tier-badge { color: var(--blue); background: #1B496515; }
+    .purple .tier-badge { color: var(--purple); background: #6B2D5B15; }
+    .amber .tier-badge { color: var(--amber); background: #92400E15; }
+
+    .tier-duration {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-left: 12px;
+    }
+    .tier-name {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 26px;
+      font-weight: 700;
+      color: var(--text);
+      margin: 8px 0 4px;
+      line-height: 1.2;
+    }
+    .tier-tagline { font-size: 15px; color: var(--text-light); }
+
+    .tier-right { text-align: right; flex-shrink: 0; margin-left: 24px; }
+
+    .tier-price {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+    .tier-price.free { font-size: 28px; }
+    .green .tier-price { color: var(--green); }
+    .blue .tier-price { color: var(--blue); }
+    .purple .tier-price { color: var(--purple); }
+    .amber .tier-price { color: var(--amber); }
+
+    .tier-toggle {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: auto;
+      margin-top: 12px;
+      transition: transform 0.3s ease;
+    }
+    .green .tier-toggle { border: 1.5px solid #2D6A4F40; color: var(--green); }
+    .blue .tier-toggle { border: 1.5px solid #1B496540; color: var(--blue); }
+    .purple .tier-toggle { border: 1.5px solid #6B2D5B40; color: var(--purple); }
+    .amber .tier-toggle { border: 1.5px solid #92400E40; color: var(--amber); }
+    .open .tier-toggle { transform: rotate(180deg); }
+
+    /* Expanded content */
+    .tier-body {
+      padding: 0 32px 32px;
+      display: none;
+      animation: fadeIn 0.3s ease;
+    }
+    .tier-card.open .tier-body { display: block; }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .tier-body-inner { border-top: 1px solid rgba(0,0,0,0.06); padding-top: 24px; }
+    .tier-description { font-size: 15px; line-height: 1.7; color: var(--text-mid); margin-bottom: 24px; }
+
+    .section-label {
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 14px;
+    }
+    .green .section-label { color: var(--green); }
+    .blue .section-label { color: var(--blue); }
+    .purple .section-label { color: var(--purple); }
+    .amber .section-label { color: var(--amber); }
+
+    .check-list { margin-bottom: 24px; }
+    .check-item {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 10px;
+      font-size: 14px;
+      line-height: 1.6;
+      color: var(--text-mid);
+    }
+    .check-icon { flex-shrink: 0; margin-top: 3px; }
+    .green .check-icon { color: var(--green); }
+    .blue .check-icon { color: var(--blue); }
+    .purple .check-icon { color: var(--purple); }
+    .amber .check-icon { color: var(--amber); }
+
+    /* Topic grid */
+    .topic-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+    .topic-card {
+      background: #FFFFFF;
+      border-radius: 10px;
+      padding: 14px 16px;
+    }
+    .green .topic-card { border: 1px solid #2D6A4F15; }
+    .blue .topic-card { border: 1px solid #1B496515; }
+    .purple .topic-card { border: 1px solid #6B2D5B15; }
+    .amber .topic-card { border: 1px solid #92400E15; }
+    .topic-card h4 { font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 4px; }
+    .topic-card p { font-size: 12.5px; color: #777; line-height: 1.5; }
+
+    /* Coverage grid */
+    .coverage-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .coverage-item {
+      display: flex;
+      gap: 8px;
+      font-size: 13.5px;
+      color: var(--text-mid);
+      line-height: 1.5;
+    }
+
+    /* Info boxes */
+    .info-box {
+      background: #FFFFFF;
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin-bottom: 12px;
+      font-size: 14px;
+      line-height: 1.6;
+      color: var(--text-mid);
+    }
+    .green .info-box { border: 1px solid #2D6A4F20; }
+    .blue .info-box { border: 1px solid #1B496520; }
+    .purple .info-box { border: 1px solid #6B2D5B20; }
+    .amber .info-box { border: 1px solid #92400E20; }
+    .info-box strong { color: var(--text); }
+
+    /* Who is this for */
+    .who-box {
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin-bottom: 20px;
+      border-left: 3px solid;
+    }
+    .green .who-box { background: #2D6A4F08; border-color: var(--green); }
+    .blue .who-box { background: #1B496508; border-color: var(--blue); }
+    .purple .who-box { background: #6B2D5B08; border-color: var(--purple); }
+    .amber .who-box { background: #92400E08; border-color: var(--amber); }
+    .who-box .who-label {
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 6px;
+    }
+    .green .who-label { color: var(--green); }
+    .blue .who-label { color: var(--blue); }
+    .purple .who-label { color: var(--purple); }
+    .amber .who-label { color: var(--amber); }
+    .who-box p { font-size: 14px; line-height: 1.6; color: var(--text-mid); }
+
+    /* CTA Button */
+    .tier-cta {
+      display: inline-flex;
+      align-items: center;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      padding: 12px 24px;
+      text-decoration: none;
+      gap: 8px;
+      border-radius: 8px;
+      color: #FFFFFF;
+      transition: opacity 0.2s ease;
+    }
+    .tier-cta:hover { opacity: 0.85; }
+    .green .tier-cta { background: var(--green); }
+    .blue .tier-cta { background: var(--blue); }
+    .purple .tier-cta { background: var(--purple); }
+    .amber .tier-cta { background: var(--amber); }
+
+    /* Footer */
+    .footer-note {
+      margin-top: 32px;
+      padding: 20px 24px;
+      background: #F8F8F8;
+      border-radius: 12px;
+      font-size: 14px;
+      line-height: 1.7;
+      color: var(--text-light);
+    }
+    .footer-note strong { color: #333; }
+    .footer-note a { color: var(--green); text-decoration: none; font-weight: 600; }
+    .footer-note a:hover { text-decoration: underline; }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .container { padding: 32px 16px 60px; }
+      .header h1 { font-size: 28px; }
+      .tier-header { padding: 20px 20px; flex-wrap: wrap; }
+      .tier-body { padding: 0 20px 24px; }
+      .tier-name { font-size: 22px; }
+      .tier-right { margin-left: 0; margin-top: 12px; text-align: left; }
+      .topic-grid, .coverage-grid { grid-template-columns: 1fr; }
+      .progression-line { display: none; }
+      .progression { gap: 10px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Header -->
+  <div class="header">
+    <div class="header-label">How I Can Help</div>
+    <h1>
+      Entering Indonesia<br>or Southeast Asia?
+      <br><span>Let's make sure you get it right.</span>
+    </h1>
+    <p class="header-problem">
+      Every year, B2B founders look at Southeast Asia and assume what worked in the US or Europe will work here. Same pricing, same sales motion, same messaging. It won't. Indonesia alone — the region's largest market — has different buyer psychology, longer sales cycles, relationship-driven decision-making, and pricing expectations that can be 5–10x lower than Western benchmarks. Most companies learn this the expensive way.
+    </p>
+    <p class="header-solution">
+      I've spent 12+ years in B2B marketing in this region, with deep expertise in Indonesia. I help companies avoid the mistakes that come from treating Southeast Asia like a copy-paste of their home market. Four ways to work with me, depending on where you are.
+    </p>
+  </div>
+
+  <!-- Progression -->
+  <div class="progression">
+    <div class="progression-step step-green">
+      <div class="num">1</div>
+      <div class="label">Explore</div>
+    </div>
+    <div class="progression-line"></div>
+    <div class="progression-step step-blue">
+      <div class="num">2</div>
+      <div class="label">Go Deep</div>
+    </div>
+    <div class="progression-line"></div>
+    <div class="progression-step step-purple">
+      <div class="num">3</div>
+      <div class="label">Validate</div>
+    </div>
+    <div class="progression-line"></div>
+    <div class="progression-step step-amber">
+      <div class="num">4</div>
+      <div class="label">Build the Plan</div>
+    </div>
+  </div>
+
+  <!-- SERVICE 1 -->
+  <div class="tier-card green open" onclick="toggleTier(this)">
+    <div class="tier-header">
+      <div>
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:6px">
+          <span class="tier-badge">Service 01</span>
+          <span class="tier-duration">15 minutes</span>
+        </div>
+        <div class="tier-name">Discovery Call</div>
+        <div class="tier-tagline">Let's see if there's a fit</div>
+      </div>
+      <div class="tier-right">
+        <div class="tier-price free">Free</div>
+        <div class="tier-toggle">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5L7 9L11 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+      </div>
+    </div>
+    <div class="tier-body">
+      <div class="tier-body-inner">
+        <p class="tier-description">A short, focused conversation to understand where you are in your Southeast Asia exploration and whether my experience is relevant to your situation.</p>
+
+        <div class="section-label">What Happens</div>
+        <div class="check-list">
+          <div class="check-item"><svg class="check-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>You tell me what you're building and why Southeast Asia is on your radar</span></div>
+          <div class="check-item"><svg class="check-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>I ask a few diagnostic questions to understand your stage and goals</span></div>
+          <div class="check-item"><svg class="check-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>I share one or two honest observations based on what I'm seeing in the market</span></div>
+          <div class="check-item"><svg class="check-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>If there's a fit, I'll point you to the right next step</span></div>
+        </div>
+
+        <div class="who-box">
+          <div class="who-label">Who is this for</div>
+          <p>Founders and growth leads who are exploring Indonesia or Southeast Asia as a potential market but aren't sure where to start — or whether it's the right move at all.</p>
+        </div>
+
+        <a class="tier-cta" href="https://calendly.com/intan-khatulistiwa/15-minute-meeting" target="_blank" rel="noopener" onclick="event.stopPropagation()">Book a Discovery Call <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 7H13M13 7L7 1M13 7L7 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- SERVICE 2 -->
+  <div class="tier-card blue" onclick="toggleTier(this)">
+    <div class="tier-header">
+      <div>
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:6px">
+          <span class="tier-badge">Service 02</span>
+          <span class="tier-duration">60 minutes</span>
+        </div>
+        <div class="tier-name">Deep Dive Session</div>
+        <div class="tier-tagline">Walk away with real clarity</div>
+      </div>
+      <div class="tier-right">
+        <div class="tier-price">$150 – $200</div>
+        <div class="tier-toggle">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5L7 9L11 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+      </div>
+    </div>
+    <div class="tier-body">
+      <div class="tier-body-inner">
+        <p class="tier-description">A structured session where we go deep on the 2–3 areas most relevant to your Indonesia entry. You come with questions. You leave with answers you can act on.</p>
+
+        <div class="section-label">What Happens</div>
+        <div class="check-list">
+          <div class="check-item"><svg class="check-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Before the call: you fill a short intake form so I can prep and we don't waste time on basics</span></div>
+          <div class="check-item"><svg class="check-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>During the call: we cover the areas that matter most to your situation</span></div>
+          <div class="check-item"><svg class="check-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>After the call: you receive a follow-up summary with key takeaways and recommended next steps</span></div>
+        </div>
+
+        <div class="section-label">Areas We Can Cover</div>
+        <div class="topic-grid">
+          <div class="topic-card">
+            <h4>Pricing Reality Check</h4>
+            <p>What the Indonesian market actually pays for tools like yours, and how to structure tiers that get budget approval</p>
+          </div>
+          <div class="topic-card">
+            <h4>Buyer Journey Mapping</h4>
+            <p>How decisions get made inside Indonesian companies — who's involved, the internal dynamics, and realistic deal timelines</p>
+          </div>
+          <div class="topic-card">
+            <h4>Competitive Landscape</h4>
+            <p>Who you're really up against locally, including players that don't show up in Western market reports</p>
+          </div>
+          <div class="topic-card">
+            <h4>Channel & Distribution</h4>
+            <p>Which demand gen channels actually work here, where to put your first dollars, and what to skip</p>
+          </div>
+          <div class="topic-card">
+            <h4>Messaging & Positioning</h4>
+            <p>What resonates with Indonesian B2B buyers vs. what sounds like a foreign company talking at the market</p>
+          </div>
+          <div class="topic-card">
+            <h4>GTM Timeline Check</h4>
+            <p>Realistic milestones factoring in local hiring, partnership building, and operational setup</p>
+          </div>
+        </div>
+
+        <div class="who-box">
+          <div class="who-label">Who is this for</div>
+          <p>Companies that are serious about entering Indonesia and need specific, experience-based guidance — not generic market reports.</p>
+        </div>
+
+        <a class="tier-cta" href="https://calendly.com/intan-khatulistiwa/1-hour-meeting" target="_blank" rel="noopener" onclick="event.stopPropagation()">Book a Deep Dive <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 7H13M13 7L7 1M13 7L7 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- SERVICE 3 -->
+  <div class="tier-card purple" onclick="toggleTier(this)">
+    <div class="tier-header">
+      <div>
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:6px">
+          <span class="tier-badge">Service 03</span>
+          <span class="tier-duration">Async · 7–14 business day turnaround</span>
+        </div>
+        <div class="tier-name">GTM Planning Review</div>
+        <div class="tier-tagline">I review your plan. You avoid expensive mistakes.</div>
+      </div>
+      <div class="tier-right">
+        <div class="tier-price">$500 – $800</div>
+        <div class="tier-toggle">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5L7 9L11 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+      </div>
+    </div>
+    <div class="tier-body">
+      <div class="tier-body-inner">
+        <p class="tier-description">You share your existing go-to-market plan, expansion brief, or pitch deck. I review it through the lens of someone who's spent 12+ years in this market and tell you what will work, what won't, and what's missing.</p>
+
+        <div class="section-label">What Happens</div>
+        <div class="check-list">
+          <div class="check-item"><svg class="check-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>You send me your GTM plan, expansion brief, or pitch deck</span></div>
+          <div class="check-item"><svg class="check-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>I review it end-to-end and provide structured written feedback</span></div>
+          <div class="check-item"><svg class="check-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>I flag specific risks and blind spots you haven't accounted for</span></div>
+          <div class="check-item"><svg class="check-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>I suggest adjustments with clear reasoning — not vague advice</span></div>
+        </div>
+
+        <div class="section-label">Review Covers</div>
+        <div class="coverage-grid">
+          <div class="coverage-item"><svg class="check-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Pricing & packaging fit for the local market</span></div>
+          <div class="coverage-item"><svg class="check-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Sales cycle assumptions and buyer journey realism</span></div>
+          <div class="coverage-item"><svg class="check-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Competitive positioning against local and regional players</span></div>
+          <div class="coverage-item"><svg class="check-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Channel strategy and demand gen approach</span></div>
+          <div class="coverage-item"><svg class="check-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Messaging and localization readiness</span></div>
+        </div>
+
+        <div class="info-box"><strong>What you get:</strong> A structured written document with specific, actionable feedback you can share with your team. Not a new plan — a sharper version of yours.</div>
+        <div class="info-box"><strong>What this isn't:</strong> I'm not writing your GTM plan from scratch, and I'm not executing it. I'm the experienced second pair of eyes that tells you where the gaps are before you spend the budget.</div>
+
+        <div class="who-box">
+          <div class="who-label">Who is this for</div>
+          <p>Companies that already have a plan or draft and want it pressure-tested by someone who knows the market deeply.</p>
+        </div>
+
+        <a class="tier-cta" href="https://calendly.com/intan-khatulistiwa/15-minute-meeting" target="_blank" rel="noopener" onclick="event.stopPropagation()">Discuss Scope <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 7H13M13 7L7 1M13 7L7 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- SERVICE 4 -->
+  <div class="tier-card amber" onclick="toggleTier(this)">
+    <div class="tier-header">
+      <div>
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:6px">
+          <span class="tier-badge">Service 04</span>
+          <span class="tier-duration">14–30 business days</span>
+        </div>
+        <div class="tier-name">GTM Plan Preparation</div>
+        <div class="tier-tagline">I build the plan so you can execute with confidence</div>
+      </div>
+      <div class="tier-right">
+        <div class="tier-price">$1,500 – $3,000</div>
+        <div class="tier-toggle">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5L7 9L11 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+      </div>
+    </div>
+    <div class="tier-body">
+      <div class="tier-body-inner">
+        <p class="tier-description">You don't have an Indonesia GTM plan yet — or what you have isn't built for this market. I create a comprehensive, Indonesia-ready go-to-market plan tailored to your product, stage, and budget. You get a document your team can actually execute against.</p>
+
+        <div class="section-label">What Happens</div>
+        <div class="check-list">
+          <div class="check-item"><svg class="check-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Kickoff call to understand your product, target segment, budget, and timeline</span></div>
+          <div class="check-item"><svg class="check-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>I research your competitive landscape, buyer segments, and channel opportunities in Indonesia</span></div>
+          <div class="check-item"><svg class="check-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>I build a structured GTM plan with localized pricing, messaging, channel strategy, and phased timeline</span></div>
+          <div class="check-item"><svg class="check-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>One round of revisions based on your team's feedback</span></div>
+          <div class="check-item"><svg class="check-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Final walkthrough call to review the plan together</span></div>
+        </div>
+
+        <div class="section-label">What's in the Plan</div>
+        <div class="topic-grid">
+          <div class="topic-card">
+            <h4>Market Opportunity</h4>
+            <p>Target segment sizing, buyer personas specific to Indonesia, and demand signals in your category</p>
+          </div>
+          <div class="topic-card">
+            <h4>Competitive Landscape</h4>
+            <p>Local and regional competitors, their positioning, pricing, and where the gaps are for you</p>
+          </div>
+          <div class="topic-card">
+            <h4>Pricing & Packaging</h4>
+            <p>Localized pricing tiers and packaging recommendations based on what the market will bear</p>
+          </div>
+          <div class="topic-card">
+            <h4>Messaging & Positioning</h4>
+            <p>Value propositions adapted for Indonesian buyers — what to lead with, what to avoid</p>
+          </div>
+          <div class="topic-card">
+            <h4>Channel Strategy</h4>
+            <p>Where to invest for demand gen, partnerships, community, and direct sales — with budget allocation guidance</p>
+          </div>
+          <div class="topic-card">
+            <h4>Phased Timeline</h4>
+            <p>A realistic month-by-month rollout plan accounting for local realities — not copy-pasted from your home market</p>
+          </div>
+        </div>
+
+        <div class="info-box"><strong>What you get:</strong> A comprehensive, presentation-ready GTM plan document you can share with your leadership team, investors, or local partners. Plus a walkthrough call to discuss execution priorities.</div>
+        <div class="info-box"><strong>What this isn't:</strong> I'm not executing the plan for you or managing your in-market operations. I'm giving you the blueprint built by someone who knows the terrain.</div>
+
+        <div class="who-box">
+          <div class="who-label">Who is this for</div>
+          <p>Companies that are committed to entering Indonesia and need a proper, locally-informed go-to-market plan — not a generic strategy deck adapted from another market.</p>
+        </div>
+
+        <a class="tier-cta" href="https://calendly.com/intan-khatulistiwa/15-minute-meeting" target="_blank" rel="noopener" onclick="event.stopPropagation()">Discuss Your Project <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 7H13M13 7L7 1M13 7L7 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer-note">
+    <strong>Not sure where to start?</strong> <a href="https://calendly.com/intan-khatulistiwa/15-minute-meeting" target="_blank" rel="noopener">Book a free discovery call.</a> It's 15 minutes, no commitment, and you'll know whether I can help with what you're working on.
+  </div>
+</div>
+
+<script>
+function toggleTier(card) {
+  if (card.classList.contains('open')) {
+    card.classList.remove('open');
+  } else {
+    document.querySelectorAll('.tier-card').forEach(c => c.classList.remove('open'));
+    card.classList.add('open');
+  }
+}
+</script>
+
+</body>
+</html>
